@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFDFDF;
+}
+
+body {
+    font-family: "Inika", serif;
+    overflow-x: hidden;
+}
+
+nav{
+    background-color: #F370FF;
+    padding: 10px 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+  font-style: normal;
+  background-color: #F370FF;
+}
+
+nav a:hover{
+    color: white;
+    border-radius: 5px;
+}
+
+.nav-links{
+    display: flex;
+     gap: 500px;
+     background-color: #F370FF;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    gap: 300px; 
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-container {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    width: 70%;
+}
+
+h2 {
+    font-weight: 700;
+    font-style: normal;
+    margin: 10px 0;
+}
+
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 100px; 
+    }
+    
+    .content-container{
+          gap: 100px;
+    }
+    
+    .image-container img{
+        width: 200px;
+    }
+    
+    .text-container {
+    width: 50%;
+}
+}
+
+
+/* Media query pour les tablettes et mobiles */
+@media (max-width: 768px) {
+    .nav-links{
+        gap: 10px;
+    }
+    
+    .content-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image-container, .text-container {
+        width: 100px%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inika", serif;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #F370FF;
+    padding: 10px 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #F370FF;
+}
+
+nav a:hover {
+    color: white;
+    border-radius: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 500px;
+    background-color: #F370FF;
+}
+
+button {
+    background-color: #F310CA;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "Inika", sans-serif;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #d811b3;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.div1 {
+    background-color: #FFDFDF;
+    padding: 50px;
+}
+
+.h1 {
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+}
+
+.p1 {
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+}
+
+.projects-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.project-card p {
+    color: #666;
+}
+
+/* Media query pour les tablettes */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 100px;
+    }
+
+    .projects-container {
+        gap: 15px;
+    }
+}
+
+/* Media query pour les mobiles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .div1 {
+        padding: 20px;
+    }
+
+    .h1 {
+        font-size: 24px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
