@@ -25,6 +25,33 @@
     </div>
     </section>
     <section>
+        <h1>Trier</h1>
+    <form action="traitement_tri_traces.php" method="post">
+        <label for="titre">Titre :</label>
+        <input type="text" id="titre" name="titre">
+        <label for="id_type">Type :</label>
+        <select id="id_type" name="id_type">
+            <option value="">Tous les types</option>
+            <option value="infographie">Infographie</option>
+            <option value="vidéo">Vidéo</option>
+            <option value="programme">Programme</option>
+            <option value="texte">Texte</option>
+            <option value="image">Image</option>
+        </select>
+        <label for="annee_but">Année de BUT :</label>
+        <select id="annee_but" name="annee_but">
+            <option value="">Toutes les années</option>
+            <option value="BUT MMI 1">BUT MMI 1</option>
+            <option value="BUT MMI 2">BUT MMI 2</option>
+            <option value="BUT MMI 3">BUT MMI 3</option>
+        </select>
+        <label for="date_ajout">Date d'Ajout :</label>
+        <input type="date" id="date_ajout" name="date_ajout">
+        <label for="competence">Compétence du BUT :</label>
+        <input type="text" id="competence" name="competence">
+        <br>
+        <button type="submit">Trier les Traces</button>
+    </form>
            <h2>Projets</h2>
     <div class="projects-container">
     <?php
