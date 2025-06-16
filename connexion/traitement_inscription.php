@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssssss", $nom, $prenom, $email, $nom_utilisateur, $mot_de_passe_hache, $role);
 
     if ($stmt->execute()) {
-        header("Location: \projet\portfolioacadémique.php");
+        header("Location: connexion.php");
         exit;
     } else {
         echo "❌ Erreur: " . $stmt->error;
