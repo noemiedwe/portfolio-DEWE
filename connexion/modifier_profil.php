@@ -22,7 +22,6 @@ if ($result->num_rows > 0) {
     echo '<input type="hidden" name="id_utilisateur" value="' . $row['id_utilisateur'] . '">';
     echo 'Nom d\'utilisateur: <input type="text" name="nom_utilisateur" value="' . htmlspecialchars($row['nom_utilisateur']) . '"><br>';
     echo 'Rôle: <input type="text" name="role" value="' . htmlspecialchars($row['role']) . '"><br>';
-    // Ajoutez d'autres champs à modifier
     echo '<button type="submit">Modifier</button>';
     echo '</form>';
 } else {
