@@ -13,9 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id_utilisateur = $_POST['id_utilisateur'];
     $nom_utilisateur = $_POST['nom_utilisateur'];
     $role = $_POST['role'];
-    // Récupérez d'autres champs du formulaire si nécessaire
-
-    // Préparez la requête SQL pour mettre à jour les informations de l'utilisateur
+    
     $sql = "UPDATE utilisateurs SET nom_utilisateur = ?, role = ? WHERE id_utilisateur = ?";
     $stmt = $conn->prepare($sql);
 
