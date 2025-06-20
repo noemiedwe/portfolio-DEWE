@@ -20,7 +20,6 @@ if ($result->num_rows > 0) {
     // Afficher les informations de l'utilisateur
     echo "Nom d'utilisateur: " . htmlspecialchars($row['nom_utilisateur']) . "<br>";
     echo "Rôle: " . htmlspecialchars($row['role']) . "<br>";
-    // Ajoutez d'autres informations à afficher
 } else {
     echo "Utilisateur non trouvé.";
 }
